@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(240,241,243);
+}
+a{
+    text-decoration: none;
+    color: #333;
+    display: inline-block
+}
+.container{
+   width: 100vw;
+   padding: 3rem 2rem; 
+}
+
+.container > div{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    
+}
+
+h1{
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.wraper ,.card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(255,255,255);
+    padding: .6rem;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.wraper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.descriptions{
+    padding: .5rem;
+}
+.page-title{
+    font-weight: 600;
+    margin: 5px 0;
+}
+.spec > div{
+    width: 115px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+.img img{
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+.access-links{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.access-links a{
+    padding: 2px 0;
+    color: #023e8a;
+    font-weight: 400;
+}
+.fa-tablet, .fa-desktop, .fa-mobile{
+    color: #48bfe3;
+}
+.fa-check{
+    color: #70e000;
+}
+.fa-xmark{
+    color: #d81159;
+}
